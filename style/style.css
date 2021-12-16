@@ -21,17 +21,28 @@ body{
     font-family: Barlow Semi Condensed, "sans-serif";
 }
 
+.sr-only{
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path:inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  margin: 1px;
+  padding: 0;
+  position:absolute;
+}
 .main__container{
  
     display: grid;
-    width:1000px;
-    margin: 50px auto;
+    max-width: 900px;
+    margin: 30px auto 0px;
     justify-content: center;
     gap: 20px;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
-
-      grid-template-areas:"card-1 card-1 card-2 card-5"
+    grid-template-areas:"card-1 card-1 card-2 card-5"
                 "card-3 card-4 card-4  card-5";  
 }
 
